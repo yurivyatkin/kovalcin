@@ -1,143 +1,66 @@
+/* globals module, require */
+
 module.exports = function(grunt) {
 
-	grunt.initConfig({
-		pkg: grunt.file.readJSON('package.json'),
+  "use strict";
 
-		sass: {
-	      options: {
-	        quiet: true,
-	        precision: 5
-	      },
-	      dev: {
-	        options: {
-	          sourcemap: true,
-	          style: 'expanded',
-	          lineNumbers: true,
-	          noCache: true
-	        },
-	        files: {
-				'a/css/src/screen.css': 'a/sass/src/screen.scss', // Source
-			}
-	      },
-	      prod: {
-	        options: {
-	          sourcemap: false,
-	          style: 'compressed'
-	        },
-			files: {
-				'a/css/src/screen.css': 'a/sass/src/screen.scss', // Source
-			}
-	      }
-	    },
+  grunt.initConfig({
+    pkg: grunt.file.readJSON("package.json"),
 
-			// handlebars: {
-			// 	compile: {
-			// 		options: {
-			// 			namespace: "PJ.templates",
-			// 			processName: function(filePath) {
-			// 				filePath = filePath.replace('a/js/tpl/','');
-			// 				return filePath.replace('.hbs','');
-			// 			}
-			// 		},
-			// 		files: {
-			// 			'a/js/custom/templates.js': 'a/js/tpl/**/*.hbs'
-			// 		}
-			// 	}
-			// },
+    sass: {
+      options: {
+        quiet: true,
+        precision: 5
+      },
+      yourMom: {
+        options: {
+          sourcemap: true,
+          style: "compressed"
+        },
+        files: {
+          "_site/css/global.css": "scss/global.scss"
+        }
+      }
+    },
 
-		 //    uglify: {
-		 //      dev: {
-		 //        options: {
-		 //          beautify: true,
-		 //          mangle: false,
-		 //          compress: false
-		 //        },
-		 //        files: {
-			// 		'a/js/src/global.js':
-			// 		[
-		 //              // Include:
-			// 		'a/js/src/plugins/*.js', // All JS in the 'src'-specific plugins folder
-			// 		'a/js/src/custom/*.js'
-		 //              // Exclude:
-		 //              // '!/path'
-		 //            ],
-			// 		'a/js/main.min.js':
-		 //            [
-		 //              // Include:
-			// 		'a/js/main.js'
-		 //              // Exclude:
-		 //              // '!/path'
-		 //            ]
-		 //        }
-		 //      },
-		 //      prod: {
-		 //        options: {
-		 //          beautify: false,
-		 //          mangle: true,
-		 //          compress: true
-		 //        },
-		 //        files: {
-			// 		'a/js/src/global.js':
-			// 		[
-		 //              // Include:
-			// 		'a/js/src/plugins/*.js', // All JS in the 'src'-specific plugins folder
-			// 		'a/js/src/custom/*.js',
-		 //              // Exclude:
-		 //              '!a/js/src/plugins/livereload.js'
-		 //            ],
-			// 		'a/js/main.min.js':
-		 //            [
-		 //              // Include:
-			// 		'a/js/main.js'
-		 //              // Exclude:
-		 //              // '!/path'
-		 //            ]
-		 //        }
-		 //      }
-		 //    },
+    autoprefixer: {
+      options: {
+        // Task-specific options go here.
+      },
+      yourMom: {
+        src: "src/css/file.css",
+        dest: "dest/css/file.css"
+      }
+    },
 
+    shell: {
+      jekyllBuild: {
+        command: "jekyll build"
+      }
+    },
 
-			// grunticon: {
-			// 	myIcons: {
-			// 		files: [{
-			// 			expand: true,
-			// 			cwd: 'a/grunticon',
-			// 			src: ['*.svg', '*.png'],
-			// 			dest: "a/img/icons"
-			// 		}],
-			// 		options: {
+    watch: {
+      options: {
+        livereload: true
+      },
+      any: {
+        files: ["_posts/*.md","index.html","projects/**.md"],
+        tasks: ["shell:jekyllBuild"]
+      },
+      css: {
+        files: ["scss/*.scss"],
+        tasks: ["sass:yourMom"]
+      },
+      js: {
+        files: ["a/js/src/custom/*.js","a/js/**/*.js","design/code/modules/**/*.js","a/js/**/*.hbs"],
+        tasks: ["handlebars","uglify:dev","shell:jekyllBuild"]
+      }
+    }
 
-			// 		}
-			// 	}
-			// },
+  });
 
-			shell: {
-				jekyllBuild: {
-					command: 'jekyll build'
-				}
-			},
+  require("load-grunt-tasks")(grunt);
 
-			watch: {
-				options: {
-					livereload: true,
-				},
-				any: {
-					files: ['_posts/**/*.md','**/*.html','!**/_compiled/**','projects/**.md'],
-					tasks: ['shell:jekyllBuild']
-				},
-				css: {
-					files: ['a/**/*.scss','design/code/modules/**/*.scss','design/wireframes/**/*.scss'],
-					tasks: ['sass:dev','shell:jekyllBuild']
-				},
-				js: {
-					files: ['a/js/src/custom/*.js','a/js/**/*.js','design/code/modules/**/*.js','a/js/**/*.hbs'],
-					tasks: ['handlebars','uglify:dev','shell:jekyllBuild']
-				}
-			}
+  grunt.registerTask("default", ["sass:yourMom", "shell", "watch"]);
 
-		});
-
-require('load-grunt-tasks')(grunt);
-
-grunt.registerTask('default', ['sass:dev','shell','watch']);
 };
