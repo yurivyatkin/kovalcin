@@ -8,28 +8,20 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON("package.json"),
 
     sass: {
-      options: {
-        quiet: true,
-        precision: 5
-      },
-      yourMom: {
+      global: {
         options: {
-          sourcemap: true,
           style: "compressed"
         },
         files: {
-          "_site/css/global.css": "scss/global.scss"
+          "site/css/global-unprefixed.css": "scss/global.scss"
         }
       }
     },
 
     autoprefixer: {
-      options: {
-        // Task-specific options go here.
-      },
-      yourMom: {
-        src: "src/css/file.css",
-        dest: "dest/css/file.css"
+      global: {
+        src: "site/css/global-unprefixed.css",
+        dest: "site/css/global.css"
       }
     },
 
@@ -43,17 +35,13 @@ module.exports = function(grunt) {
       options: {
         livereload: true
       },
-      any: {
-        files: ["_posts/*.md","index.html","projects/**.md"],
-        tasks: ["shell:jekyllBuild"]
+      site: {
+        files: ["jekyll/**/*.md", "jekyll/index.html"],
+        tasks: ["shell:jekyllBuild", "sass", "autoprefixer"]
       },
       css: {
         files: ["scss/*.scss"],
-        tasks: ["sass:yourMom"]
-      },
-      js: {
-        files: ["a/js/src/custom/*.js","a/js/**/*.js","design/code/modules/**/*.js","a/js/**/*.hbs"],
-        tasks: ["handlebars","uglify:dev","shell:jekyllBuild"]
+        tasks: ["sass", "autoprefixer"]
       }
     }
 
@@ -61,6 +49,6 @@ module.exports = function(grunt) {
 
   require("load-grunt-tasks")(grunt);
 
-  grunt.registerTask("default", ["sass:yourMom", "shell", "watch"]);
+  grunt.registerTask("default", ["sass", "shell", "watch"]);
 
 };
