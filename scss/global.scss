@@ -1,83 +1,8 @@
+@import "reset";
+@import "typography";
+@import "header";
+@import "layout";
 @import "footer";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-html {
-  box-sizing: border-box;
-}
-body {
-  font-family: "ff-meta-web-pro", sans-serif;
-  line-height: 1.7;
-}
-a {
-  text-decoration: none;
-}
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.1;
-}
-h2 {
-  font-size: 2.0rem;
-}
-  
-.site-width {
-  max-width: 1000px;
-  margin: 0 auto;
-  position: relative;
-}
-.site-navigation {
-  background: #242424;
-  ul {
-    padding: 0;
-    list-style: none;
-  }
-  li {
-    display: inline-block;
-  }
-  li a {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding: 15px;
-    color: white;
-  }
-  .site-width {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.logo {
-  background: #3B3B3B;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  margin-right: 15px;
-  color: white;
-  font-weight: bold;
-  line-height: 1.2;
-  font-size: 1.2rem;
-  svg {
-    width: 14px;
-    height: 14px;
-    &.letter-1 {
-      fill: #FC39C5;
-      margin-right: 4px;
-    }
-    &.letter-2 {
-      fill: #21CAA3;
-      transform: rotate(180deg);
-      margin-right: 4px;
-      margin-bottom: -1px;
-    }
-    &.letter-3 {
-      fill: #E9CB30;
-      margin-right: 6px;
-      
-    }
-  }
-}
 
 .hero {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/hero.jpg);
@@ -123,16 +48,6 @@ h2 {
 
 .selected-work {
   margin: 0 0 60px 0;
-}
-
-.grid {
-  display: flex;
-  .grid-1-3 {
-    margin-right: 20px;
-  }
-  [class^='grid-']:last-child {
-    margin-right: 0;
-  }
 }
 
 .img {

@@ -1,0 +1,46 @@
+.site-navigation {
+  background: #242424;
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  li a {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 15px;
+    color: white;
+  }
+  .site-width {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  background: #3B3B3B;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-right: 15px;
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 1.2rem;
+  svg {
+    width: 171px;
+    height: 43px;
+    fill: white;
+  }
+}
+.logo-katie-a {
+  fill: #FC39C5;
+}
+.logo-kovalcin-v {
+  fill: #21CAA3;
+}
+.logo-kovalcin-a {
+  fill: #E9CB30;
+}
