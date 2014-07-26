@@ -42,6 +42,22 @@ module.exports = function(grunt) {
       css: {
         files: ["scss/*.scss"],
         tasks: ["sass", "autoprefixer"]
+      },
+      svg: {
+        files: ["jekyll/svg/*.svg"],
+        tasks: ["svgstore", "shell"]
+      }
+    },
+
+    svgstore: {
+      options: {
+        prefix : "shape-",
+        cleanup: ["fill"]
+      },
+      default: {
+        files: {
+          "jekyll/images/svg-defs.svg": ["jekyll/svg/*.svg"]
+        }
       }
     }
 
