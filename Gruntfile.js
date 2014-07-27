@@ -60,7 +60,7 @@ module.exports = function(grunt) {
       },
       default: {
         files: {
-          "jekyll/_includes/svg-defs.svg": ["jekyll/svg/*.svg"]
+          "jekyll/_includes/svg-defs.svg": ["svg/*.svg"]
         }
       }
     }
@@ -69,6 +69,6 @@ module.exports = function(grunt) {
 
   require("load-grunt-tasks")(grunt);
 
-  grunt.registerTask("default", ["sass", "shell", "watch"]);
+  grunt.registerTask("default", ["shell", "sass", "autoprefixer", "svgstore", "watch"]);
 
 };
