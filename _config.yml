@@ -1,4 +1,15 @@
-name:        Katie Kovalcin
-markdown:    redcarpet
-source:      jekyll
-destination: site
+name: Katie Kovalcin
+markdown: redcarpet
+
+exclude: [
+  .git,
+  .gitignore,
+  .DS_Store,
+  CNAME,
+  svg,
+  .sass-cache,
+  package.json, 
+  Gruntfile.js, 
+  node_modules, 
+  readme.md
+]

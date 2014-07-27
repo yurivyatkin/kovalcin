@@ -13,15 +13,15 @@ module.exports = function(grunt) {
           style: "compressed"
         },
         files: {
-          "site/css/global-unprefixed.css": "scss/global.scss"
+          "_site/css/global-unprefixed.css": "scss/global.scss"
         }
       }
     },
 
     autoprefixer: {
       global: {
-        src: "site/css/global-unprefixed.css",
-        dest: "site/css/global.css"
+        src: "_site/css/global-unprefixed.css",
+        dest: "_site/css/global.css"
       }
     },
 
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       site: {
-        files: ["jekyll/**/*.md", "jekyll/*.html", "jekyll/**/*.html"],
+        files: ["**/*.md", "index.html", "**/*.html"],
         tasks: ["shell", "sass", "autoprefixer"]
       },
       css: {
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         tasks: ["sass", "autoprefixer"]
       },
       svg: {
-        files: ["jekyll/svg/*.svg"],
+        files: ["svg/*.svg"],
         tasks: ["svgstore", "shell", "sass", "autoprefixer"]
       }
     },
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
       },
       default: {
         files: {
-          "jekyll/_includes/svg-defs.svg": ["svg/*.svg"]
+          "_includes/svg-defs.svg": ["svg/*.svg"]
         }
       }
     }
