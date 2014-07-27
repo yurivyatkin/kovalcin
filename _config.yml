@@ -1,6 +1,6 @@
 name: Katie Kovalcin
 markdown: redcarpet
-
+baseurl: "http://katiekovalcin.github.io/kovalcin"
 exclude: [
   .git,
   .gitignore,

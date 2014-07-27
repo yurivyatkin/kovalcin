@@ -26,8 +26,11 @@ module.exports = function(grunt) {
     },
 
     shell: {
+      jekyllServe: {
+        command: "jekyll serve --baseurl=http://localhost:4000"
+      },
       jekyllBuild: {
-        command: "jekyll build"
+        command: "jekyll build --baseurl=http://localhost:4000"
       }
     },
 
@@ -37,7 +40,7 @@ module.exports = function(grunt) {
       },
       site: {
         files: ["**/*.md", "index.html", "**/*.html"],
-        tasks: ["shell", "sass", "autoprefixer"]
+        tasks: ["shell:jekyllBuild", "sass", "autoprefixer"]
       },
       css: {
         files: ["scss/*.scss"],
@@ -45,7 +48,7 @@ module.exports = function(grunt) {
       },
       svg: {
         files: ["svg/*.svg"],
-        tasks: ["svgstore", "shell", "sass", "autoprefixer"]
+        tasks: ["svgstore", "shell:jekyllBuild", "sass", "autoprefixer"]
       }
     },
 
@@ -69,6 +72,6 @@ module.exports = function(grunt) {
 
   require("load-grunt-tasks")(grunt);
 
-  grunt.registerTask("default", ["shell", "sass", "autoprefixer", "svgstore", "watch"]);
+  grunt.registerTask("default", ["shell:jekyllBuild", "sass", "autoprefixer", "svgstore", "watch"]);
 
 };
