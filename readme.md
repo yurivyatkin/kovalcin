@@ -1,1 +1,1 @@
-hi
+The repo for Katie Kovalcin's personal site.
