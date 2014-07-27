@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: default
 title:  "Projects"
 ---
 
-projects
+<h1>Projects</h1>
+
+<p>Will go here.</p>
