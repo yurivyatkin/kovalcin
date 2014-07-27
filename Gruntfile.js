@@ -37,7 +37,7 @@ module.exports = function(grunt) {
       },
       site: {
         files: ["jekyll/**/*.md", "jekyll/*.html", "jekyll/**/*.html"],
-        tasks: ["shell:jekyllBuild", "sass", "autoprefixer"]
+        tasks: ["shell", "sass", "autoprefixer"]
       },
       css: {
         files: ["scss/*.scss"],
@@ -45,18 +45,22 @@ module.exports = function(grunt) {
       },
       svg: {
         files: ["jekyll/svg/*.svg"],
-        tasks: ["svgstore", "shell"]
+        tasks: ["svgstore", "shell", "sass", "autoprefixer"]
       }
     },
 
     svgstore: {
       options: {
         prefix : "shape-",
-        cleanup: ["fill"]
+        cleanup: false,
+        svg: {
+          style: "display: none;"
+          // maybe weird xmlss garbage?
+        }
       },
       default: {
         files: {
-          "jekyll/images/svg-defs.svg": ["jekyll/svg/*.svg"]
+          "jekyll/_includes/svg-defs.svg": ["jekyll/svg/*.svg"]
         }
       }
     }

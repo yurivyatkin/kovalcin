@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A (Not-Super-Technical) Designer's CLI Toolbox"
+title:  "A (Not-Super-Technical) Designer's CLI&nbsp;Toolbox"
 date:   2014-05-08 16:22:48
 ---
 
