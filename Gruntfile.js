@@ -71,6 +71,7 @@ module.exports = function(grunt) {
 
   require("load-grunt-tasks")(grunt);
 
+  grunt.registerTask("serve", ["shell:jekyllServe"]);
   grunt.registerTask("default", ["sass", "autoprefixer", "svgstore", "shell:jekyllBuild", "watch"]);
 
 };
