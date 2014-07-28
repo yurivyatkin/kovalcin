@@ -27,10 +27,10 @@ module.exports = function(grunt) {
 
     shell: {
       jekyllServe: {
-        command: "jekyll serve --baseurl=http://localhost:4000"
+        command: "jekyll serve --baseurl="
       },
       jekyllBuild: {
-        command: "jekyll build --baseurl=http://localhost:4000"
+        command: "jekyll build --config _config-dev.yml"
       }
     },
 
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       site: {
-        files: ["index.html", "_layouts/*.html", "_posts/*.md", "_projects/*.md"],
+        files: ["index.html", "_layouts/*.html", "_posts/*.md", "_projects/*.md", "_includes/*.html"],
         tasks: ["shell:jekyllBuild"]
       },
       css: {
