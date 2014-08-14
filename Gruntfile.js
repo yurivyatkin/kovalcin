@@ -7,6 +7,14 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
 
+    uglify: {
+      global: {
+        files: {
+          "js/site.min.js": ["js/site.js"]
+        }
+      }
+    },
+
     sass: {
       global: {
         options: {
@@ -42,12 +50,16 @@ module.exports = function(grunt) {
         files: ["index.html", "_layouts/*.html", "_posts/*.md", "_projects/*.md", "_includes/*.html"],
         tasks: ["shell:jekyllBuild"]
       },
+      js: {
+        files: ["js/*.js"],
+        tasks: ["uglify", "shell:jekyllBuild"]
+      },
       css: {
         files: ["scss/*.scss"],
         tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
       },
-      svg: {
-        files: ["svg/*.svg"],
+      svgIcons: {
+        files: ["svg-icons/*.svg"],
         tasks: ["svgstore", "shell:jekyllBuild"]
       }
     },
@@ -62,7 +74,7 @@ module.exports = function(grunt) {
       },
       default: {
         files: {
-          "_includes/svg-defs.svg": ["svg/*.svg"]
+          "_includes/svg-defs.svg": ["svg-icons/*.svg"]
         }
       }
     }
