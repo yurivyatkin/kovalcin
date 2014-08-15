@@ -7,9 +7,19 @@
   var Site = {
 
     init: function() {
+      this.kickOffAnimations();
+      this.bindEventAnimations();
+    },
 
+    kickOffAnimations: function() {
       this.drawPath("shape-prism-1");
+    },
 
+    bindEventAnimations: function() {
+      var prism1 = document.getElementById("shape-prism-1");
+      prism1.addEventListener("mouseenter", function() {
+        Site.drawPath("shape-prism-1");
+      });
     },
 
     drawPath: function(id) {
@@ -32,7 +42,7 @@
 
       // Define our transition
       path.style.transition = path.style.WebkitTransition =
-        "stroke-dashoffset 2s ease-in-out";
+        "stroke-dashoffset 1s ease-in-out";
       // Go!
       path.style.strokeDashoffset = "0";
 

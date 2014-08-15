@@ -1,7 +1,29 @@
-.decoration-prism-1 {
+#decoration-prism-1 {
   position: absolute;
-  top: 500px;
+  top: 1500px;
   left: 100px;
   width: 94px;
   height: 215px;
+  pointer-events: auto;
+}
+
+#decoration-square-1 {
+  position: absolute;
+  top: 400px;
+  left: -100px;
+  width: 21px;
+  height: 21px;
+  animation: driftBy 60s -8s linear infinite;
+  path {
+    stroke: white;
+    stroke-width: 12;
+  }
+}
+@keyframes driftBy {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(1500px);
+  }
 }
