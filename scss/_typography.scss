@@ -1,7 +1,16 @@
+html {
+  font-size: 110%;
+  @include breakpoint(mama-bear) {
+    font-size: 100%;
+  }
+  @include breakpoint(baby-bear) {
+    font-size: 85%;
+  }
+}
+
 body {
   font-family: "ff-meta-web-pro", sans-serif;
   line-height: 1.7;
-  font-size: 110%;
   color: $darkgray;
 }
 

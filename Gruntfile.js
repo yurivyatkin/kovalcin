@@ -59,7 +59,7 @@ module.exports = function(grunt) {
         tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
       },
       svgIcons: {
-        files: ["svg-icons/*.svg"],
+        files: ["svg/*.svg"],
         tasks: ["svgstore", "shell:jekyllBuild"]
       }
     },
@@ -74,7 +74,7 @@ module.exports = function(grunt) {
       },
       default: {
         files: {
-          "_includes/svg-defs.svg": ["svg-icons/*.svg"]
+          "_includes/svg-defs.svg": ["svg/*.svg"]
         }
       }
     }

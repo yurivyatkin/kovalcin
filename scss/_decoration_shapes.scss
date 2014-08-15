@@ -1,23 +1,20 @@
-#decoration-prism-1 {
+.decoration-plus-1 {
+  width: 24px;
+  height: 24px;
+  stroke: white;
   position: absolute;
-  top: 1500px;
-  left: 100px;
-  width: 94px;
-  height: 215px;
-  pointer-events: auto;
+  top: 337px;
+  left: 140px;
 }
 
-#decoration-square-1 {
+.decoration-square-1 {
   position: absolute;
   top: 400px;
   left: -100px;
   width: 21px;
   height: 21px;
-  animation: driftBy 60s -8s linear infinite;
-  path {
-    stroke: white;
-    stroke-width: 12;
-  }
+  animation: driftBy 180s -45s linear infinite;
+  stroke: white;
 }
 @keyframes driftBy {
   0% {
