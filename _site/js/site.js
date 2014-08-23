@@ -16,10 +16,10 @@
     },
 
     bindEventAnimations: function() {
-      var prism1 = document.getElementById("shape-prism-1");
-      prism1.addEventListener("mouseenter", function() {
-        Site.drawPath("shape-prism-1");
-      });
+      // var prism1 = document.getElementById("shape-prism-1");
+      // prism1.addEventListener("mouseenter", function() {
+      //   Site.drawPath("shape-prism-1");
+      // });
     },
 
     drawPath: function(id) {
