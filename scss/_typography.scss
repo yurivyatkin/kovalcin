@@ -1,10 +1,10 @@
 html {
-  font-size: 110%;
+  font-size: 100%;
   @include breakpoint(mama-bear) {
-    font-size: 100%;
+    font-size: 90%;
   }
   @include breakpoint(baby-bear) {
-    font-size: 85%;
+    font-size: 80%;
   }
 }
 
