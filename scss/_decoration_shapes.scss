@@ -1,18 +1,24 @@
+[class*='decoration-'] {
+  position: absolute;
+}
+[class*='decoration-square-'] {
+  width: 21px;
+  height: 21px;
+  stroke: black;
+}
+
 .decoration-plus-1 {
   width: 24px;
   height: 24px;
   stroke: white;
-  position: absolute;
-  top: 337px;
+  top: 50%;
   left: 140px;
 }
 
 .decoration-square-1 {
   position: absolute;
-  top: 400px;
+  top: 60%;
   left: -100px;
-  width: 21px;
-  height: 21px;
   animation: driftBy 180s -45s linear infinite;
   stroke: white;
 }
@@ -31,4 +37,27 @@
   right: 0;
   width: 300px;
   stroke: white;
+}
+
+
+// Main
+.decoration-square-2 {
+  top: 30px;
+  left: 30px;
+}
+.decoration-square-3 {
+  top: 60px;
+  left: 60px;
+}
+.decoration-square-4 {
+  top: 90px;
+  left: 90px;
+}
+.decoration-square-5 {
+  top: 120px;
+  left: 120px;
+}
+.decoration-square-6 {
+  top: 150px;
+  left: 150px;
 }
