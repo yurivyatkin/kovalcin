@@ -1,5 +1,15 @@
 [class*='decoration-'] {
   position: absolute;
+  html.dev & {
+    &::after {
+      content: "text";
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      width: 100px;
+      outline: 1px solid red;
+    }
+  }
 }
 [class*='decoration-square-'] {
   width: 21px;
@@ -40,24 +50,27 @@
 }
 
 
-// Main
+// Main (homepage)
 .decoration-square-2 {
-  top: 30px;
-  left: 30px;
+  top: -14px; 
+  left: 1227px;
 }
 .decoration-square-3 {
-  top: 60px;
-  left: 60px;
+  top: 1785px; 
+  left: 26px;
 }
 .decoration-square-4 {
-  top: 90px;
-  left: 90px;
+  top: 359px; 
+  left: 153px;
 }
-.decoration-square-5 {
-  top: 120px;
-  left: 120px;
-}
-.decoration-square-6 {
-  top: 150px;
-  left: 150px;
+
+
+// dev
+.drag-info {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  background: red;
+  color: white;
 }
