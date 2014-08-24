@@ -1,15 +1,6 @@
+// Generic
 [class*='decoration-'] {
   position: absolute;
-  html.dev & {
-    &::after {
-      content: "text";
-      position: absolute;
-      bottom: 100%;
-      left: 0;
-      width: 100px;
-      outline: 1px solid red;
-    }
-  }
 }
 [class*='decoration-square-'] {
   width: 21px;
@@ -17,9 +8,15 @@
   stroke: black;
 }
 
-.decoration-plus-1 {
+[class*='decoration-plus-'] {
   width: 24px;
   height: 24px;
+  stroke: black;
+}
+
+
+// Hero
+.decoration-plus-1 {
   stroke: white;
   top: 50%;
   left: 140px;
@@ -64,8 +61,29 @@
   left: 153px;
 }
 
+.decoration-plus-2 {
+  top: 114px; 
+  left: 979px;
+}
+.decoration-plus-3 {
+  top: 1167px; 
+  left: 149px;
+}
+.decoration-plus-4 {
+  top: 1200px; 
+  left: 47px;
+}
+.decoration-plus-5 {
+  top: 1342px; 
+  left: 245px;
+}
+.decoration-plus-6 {
+  top: 319px; 
+  left: 1036px;
+}
 
-// dev
+
+// Dev
 .drag-info {
   position: fixed;
   bottom: 0;
