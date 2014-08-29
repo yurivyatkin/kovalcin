@@ -1,21 +1,21 @@
 ---
 layout: default
 ---
-
-<article class="article">
-
-  <div class="meta">
-    <time>
-      {{ page.date | date_to_string }}
-    </time>
-  </div>
-
-  <h2>
+<div class="site-width">
+  <h1>
     {{ page.title }}
-  </h2>
+  </h1>
+  <article class="article">
 
-  <div class="article-text">
-    {{ content }}
-  </div>
+    <div class="meta">
+      <time>
+        {{ page.date | date_to_string }}
+      </time>
+    </div>
 
-</article>
+    <div class="article-text">
+      {{ content }}
+    </div>
+
+  </article>
+</div>

@@ -1,7 +1,13 @@
+$sidebarWidth: 255px;
+
 .article {
-  padding: 0 10px 0 255px;
+  padding: 0 10px 0 $sidebarWidth;
   margin: 0 0 100px 0;
   position: relative;
+  max-width: (605px + $sidebarWidth);
+  .selected-work & {
+    max-width: none;
+  }
   h2 {
     position: relative;
     top: -0.3rem;
