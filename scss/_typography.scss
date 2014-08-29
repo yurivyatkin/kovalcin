@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
     &:hover, &:focus {
         transition: .2s;
         color: $midgray;
-        border-bottom: 1px $darkgray dotted;
+        border-bottom: 1px $darkgray solid;
       }
   }
 }
@@ -73,6 +73,7 @@ hr {
   a {
     border-bottom: 1px solid #ccc;
     &:hover, &:focus {
+      transition: .5s;
       color: #999;
     }
   }

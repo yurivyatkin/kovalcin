@@ -89,9 +89,20 @@
     a {
       color: #212121;
       border-bottom: 1px solid #ccc;
+      transition: color 0.15s;
+      &:hover, &:focus {
+        transition: .2s;
+        color: $green;
+        border-bottom: 1px $green solid;
+      }
     }
   }
-  .publication-name, time {
+  .publication-name {
     font-style: italic;
+    line-height: 1.2rem;
+    font-size: 1.1rem;
+  }
+  time {
+    font-size: .8rem;
   }
 }
