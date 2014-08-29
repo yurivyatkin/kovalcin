@@ -13,28 +13,48 @@
       padding: 15px 0 5px;
       margin: 0 15px;
       color: white;
+      transition: color 0.15s;
       svg {
         width: 10px;
         height: 10px;
         fill: white;
+        transition: .7s;
       }
       &:hover, &:focus {
-        border-bottom: 3px solid white;
+        transition: 1s;
+        svg {
+          transform: rotate(180deg);
+        }
       }
     }
     &.nav-design {
       svg {
         fill: $pink;
       }
+      a {
+        &:hover, &:focus {
+          color: $pink;
+        }
+      }
     }
     &.nav-writing {
       svg {
         fill: $green;
       }
+      a {
+        &:hover, &:focus {
+          color: $green;
+        }
+      }
     }
     &.nav-about {
       svg {
         fill: $yellow;
+      }
+      a {
+        &:hover, &:focus {
+          color: $yellow;
+        }
       }
     }
     @include breakpoint(mama-bear) {
