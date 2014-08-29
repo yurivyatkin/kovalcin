@@ -25,6 +25,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   a {
     color: $green;
+    transition: .2s;
+    &:hover, &:focus {
+        transition: .2s;
+        color: $midgray;
+        border-bottom: 1px $darkgray dotted;
+      }
   }
 }
 h1, h2 {
