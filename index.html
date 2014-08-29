@@ -19,7 +19,7 @@ title: Katie Kovalcin
           </div>
           <br>
           <time>
-            {{ post.date | date_to_string }}
+            {{ post.date | date: '%B %d, %Y' }}
           </time>
         </div>
 
@@ -68,7 +68,7 @@ title: Katie Kovalcin
                 <img src="/images/work/infographics-thumb.jpg" alt="">
               </div>
               <h3>Infographics</h3>
-              <p>A little teaser about what this project was like and what it entailed.</p>  
+              <p class="project">A little teaser about what this project was like and what it entailed.</p>  
             </article>
           </div>
 

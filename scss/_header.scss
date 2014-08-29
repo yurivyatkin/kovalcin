@@ -6,16 +6,16 @@
   }
   li {
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: .8rem;
     a {
       text-transform: uppercase;
-      letter-spacing: 3px;
+      letter-spacing: 4px;
       padding: 15px 0 5px;
       margin: 0 15px;
       color: white;
       svg {
-        width: 13px;
-        height: 13px;
+        width: 10px;
+        height: 10px;
         fill: white;
       }
       &:hover, &:focus {
@@ -38,7 +38,7 @@
       }
     }
     @include breakpoint(mama-bear) {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       a {
         margin-right: 10px;
         svg {
