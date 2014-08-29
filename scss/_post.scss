@@ -83,3 +83,18 @@ $sidebarWidth: 255px;
     color: $green;
   }
 }
+.back-button {
+  svg {
+    width: 13px;
+    height: 13px;
+    fill: $green;
+    transform: rotate(180deg);
+    margin-right: 10px;
+  }
+  &:hover, &:focus {
+    border-bottom-color: black;
+    letter-spacing: 5.5px;
+    transition: .2s;
+    color: $green;
+  }
+}
