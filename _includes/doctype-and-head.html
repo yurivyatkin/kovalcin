@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% if site.baseurl == "" %}
+<html lang="en" class="dev">
+{% else %}
+<html lang="en">
+{% endif %}
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>{{ page.title }}</title>
+
+  <link rel="stylesheet" href="//cloud.typography.com/610186/677744/css/fonts.css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/global.css">
+
+</head>
