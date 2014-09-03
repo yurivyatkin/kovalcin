@@ -1,7 +1,18 @@
+$sidebarWidth: 255px;
+
 .article {
-  padding: 0 10px 0 255px;
+  padding: 0 10px 0 $sidebarWidth;
   margin: 0 0 100px 0;
   position: relative;
+  max-width: (605px + $sidebarWidth);
+  svg {
+    width: 13px;
+    height: 13px;
+    fill: $green;
+  }
+  .selected-work & {
+    max-width: none;
+  }
   h2 {
     position: relative;
     top: -0.3rem;
@@ -57,22 +68,33 @@
 
 .read-more {
   display: inline-block;
-  padding: 2px 0;
+  padding: 0px;
+  margin-right: 8px;
   color: $midgray;
   border-bottom: 4px solid $midgray;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   font-weight: bold;
+  transition: .2s;
+  &:hover, &:focus {
+    border-bottom-color: black;
+    letter-spacing: 5.5px;
+    transition: .2s;
+    color: $green;
+  }
+}
+.back-button {
   svg {
     width: 13px;
     height: 13px;
     fill: $green;
+    transform: rotate(180deg);
+    margin-right: 10px;
   }
   &:hover, &:focus {
-    color: $green;
     border-bottom-color: black;
-    svg {
-      fill: black;
-    }
+    letter-spacing: 5.5px;
+    transition: .2s;
+    color: $green;
   }
 }

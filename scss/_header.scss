@@ -6,39 +6,60 @@
   }
   li {
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: .8rem;
+    font-weight: bold;
     a {
       text-transform: uppercase;
-      letter-spacing: 3px;
+      letter-spacing: 4px;
       padding: 15px 0 5px;
       margin: 0 15px;
       color: white;
+      transition: color 0.15s;
       svg {
-        width: 13px;
-        height: 13px;
+        width: 10px;
+        height: 10px;
         fill: white;
+        transition: .7s;
       }
       &:hover, &:focus {
-        border-bottom: 3px solid white;
+        transition: 1s;
+        svg {
+          transform: rotate(180deg);
+        }
       }
     }
     &.nav-design {
       svg {
         fill: $pink;
       }
+      a {
+        &:hover, &:focus {
+          color: $pink;
+        }
+      }
     }
     &.nav-writing {
       svg {
         fill: $green;
+      }
+      a {
+        &:hover, &:focus {
+          color: $green;
+        }
       }
     }
     &.nav-about {
       svg {
         fill: $yellow;
       }
+      a {
+        &:hover, &:focus {
+          color: $yellow;
+        }
+      }
     }
     @include breakpoint(mama-bear) {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       a {
         margin-right: 10px;
         svg {

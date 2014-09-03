@@ -1,21 +1,29 @@
 ---
 layout: default
 ---
-
-<article class="article">
-
-  <div class="meta">
-    <time>
-      {{ page.date | date_to_string }}
-    </time>
-  </div>
-
-  <h2>
+<div class="site-width">
+  <h1>
     {{ page.title }}
-  </h2>
+  </h1>
+  <article class="article">
 
-  <div class="article-text">
-    {{ content }}
-  </div>
+    <div class="meta">
+      <time>
+        {{ page.date | date: '%B %d, %Y' }}
+      </time>
+    </div>
 
-</article>
+    <div class="article-text">
+      {{ content }}
+    </div>
+    <hr>
+    <div class="back-button">
+      <svg>
+        <use xlink:href="#shape-triangle-right" />
+      </svg>
+      <a href="/writing.html" class="read-more">
+        Back to Articles
+      </a>
+    </div>
+  </article>
+</div>
