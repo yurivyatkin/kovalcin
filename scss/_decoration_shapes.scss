@@ -1,18 +1,26 @@
 // Generic
 [class*='decoration-'] {
   position: absolute;
+  @include breakpoint(mama-bear) {
+    display: none;
+  }
 }
 [class*='decoration-square-'] {
   width: 21px;
   height: 21px;
   stroke: black;
 }
-
 [class*='decoration-plus-'] {
   width: 24px;
   height: 24px;
   stroke: black;
 }
+[class*='decoration-prism-down-'] {
+  width: 51px;
+  height: 115px;
+  stroke: black;
+}
+
 
 
 // Hero
@@ -48,6 +56,11 @@
 
 
 // Main (homepage)
+.decoration-prism-down-1 {
+  top: 169px; 
+  left: 64px;
+}
+
 .decoration-square-2 {
   top: -14px; 
   left: 1227px;
@@ -57,8 +70,9 @@
   left: 26px;
 }
 .decoration-square-4 {
-  top: 359px; 
-  left: 153px;
+  top: 394px; 
+  right: 80%;
+  margin-right: 40px;
 }
 
 .decoration-plus-2 {
