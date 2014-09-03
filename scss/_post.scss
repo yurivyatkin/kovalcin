@@ -5,11 +5,6 @@ $sidebarWidth: 255px;
   margin: 0 0 100px 0;
   position: relative;
   max-width: (605px + $sidebarWidth);
-  svg {
-    width: 13px;
-    height: 13px;
-    fill: $green;
-  }
   .selected-work & {
     max-width: none;
   }
@@ -66,6 +61,13 @@ $sidebarWidth: 255px;
   }
 }
 
+.read-more-wrap {
+  svg {
+    width: 13px;
+    height: 13px;
+    fill: $green;
+  }
+}
 .read-more {
   display: inline-block;
   padding: 0px;

@@ -2,15 +2,17 @@
 
 <body>
 
-  {% include svg-defs.svg %}
+  <div class="entire-site">
 
-  {% include header.html %}
+    {% include svg-defs.svg %}
 
-  {{ content }}
+    {% include header.html %}
 
-  {% include footer.html %}
+    {{ content }}
 
-  <script src="/js/site.min.js"></script>
+    {% include footer.html %}
+
+  </div>
 
 </body>
 

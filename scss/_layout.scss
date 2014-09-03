@@ -1,3 +1,8 @@
+.entire-site {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .grid {
   display: flex;
   .grid-1-2 {
@@ -30,7 +35,6 @@
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
-  overflow-x: hidden;
 }
 
 main {

@@ -27,10 +27,9 @@ h1, h2, h3, h4, h5, h6 {
     color: $green;
     transition: .2s;
     &:hover, &:focus {
-        transition: .2s;
-        color: $midgray;
-        border-bottom: 1px $darkgray solid;
-      }
+      transition: .2s;
+      color: $midgray;
+    }
   }
 }
 h1, h2 {

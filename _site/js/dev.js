@@ -5,9 +5,6 @@ $("<div />", {
 
 $(".decoration").draggable({
   stop: function(event, ui) {
-
-    console.log(event, ui);
-
     $("#drag-info").html(
       "class: " + $(event.target).attr("class") + "<br>" + "top: " + event.target.offsetTop + "px; <br>" + "left: " + event.target.offsetLeft + "px;"
     );
