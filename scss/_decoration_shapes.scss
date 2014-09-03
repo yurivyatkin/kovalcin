@@ -36,6 +36,11 @@
   height: 104px;
   stroke: black;
 }
+[class*='decoration-zig-zag-'] {
+  width: 204px;
+  height: 76px;
+  stroke: black;
+}
 
 
 
@@ -121,8 +126,20 @@
 }
 
 .decoration-circle-1 {
-  top: 1785px; 
-  left: 26px;
+  top: 875px; 
+  right: 80%;
+  margin-right: 20px;
+}
+.decoration-circle-2 {
+  top: 100%;
+  margin-top: 40px;
+  right: 20px;
+}
+
+.decoration-zig-zag-1 {
+  top: 100%;
+  margin-top: 100px;
+  left: 0;
 }
 
 
