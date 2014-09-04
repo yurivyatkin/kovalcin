@@ -1,6 +1,6 @@
 .site-footer {
   background: #222;
-  padding: 40px 40px 120px 40px;
+  padding: 40px 40px 40px 40px;
   color: white;
   h5 {
     color: $yellow;
@@ -57,6 +57,11 @@
 
 .footer-about {
   color: #838383;
+  a {
+    display: initial;
+    margin: 0;
+    color: #ccc;
+  }
 }
 
 
