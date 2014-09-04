@@ -7,9 +7,11 @@
   li {
     display: inline-block;
     font-size: .8rem;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
     a {
       text-transform: uppercase;
-      letter-spacing: 4px;
+      letter-spacing: .3rem;
       padding: 15px 0 5px;
       margin: 0 15px;
       color: white;
