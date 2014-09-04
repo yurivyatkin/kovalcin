@@ -1,7 +1,7 @@
-$sidebarWidth: 255px;
+$sidebarWidth: 260px;
 
 .article {
-  padding: 0 10px 0 $sidebarWidth;
+  padding: 0 10px 0 ($sidebarWidth + 40);
   margin: 0 0 100px 0;
   position: relative;
   max-width: (605px + $sidebarWidth);
@@ -18,7 +18,7 @@ $sidebarWidth: 255px;
     position: absolute;
     top: 0;
     left: 0;
-    width: 220px;
+    width: $sidebarWidth;
     text-align: right;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
