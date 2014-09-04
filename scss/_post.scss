@@ -22,8 +22,8 @@ $sidebarWidth: 255px;
     text-align: right;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    font-weight: bold;
-    font-size: 0.9rem;
+    font-weight: 700;
+    font-size: .8rem;
     line-height: 2;
     color: $midgray;
     a {
@@ -33,12 +33,13 @@ $sidebarWidth: 255px;
       background: $midgray;
       color: white;
       display: inline-block;
-      padding: 5px 11px 5px 15px;
+      padding: 5px 11px 3px 15px;
       margin: 0 -20px 10px 0;
-      font-weight: bold;
-      font-size: 0.8rem;
+      font-weight: 700;
+      font-size: 1rem;
       letter-spacing: 0.4rem;
       white-space: nowrap;
+      text-align: right;
     }
   }
   @include breakpoint(mama-bear) {
