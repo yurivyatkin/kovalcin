@@ -79,9 +79,10 @@
 
 .decoration-squiggle-1 {
   position: absolute;
-  top: 60%;
+  top: 77%;
   right: 0;
   width: 300px;
+  height: 39px;
   stroke: white;
 }
 
@@ -128,6 +129,7 @@
   left: 100%;
   margin-left: 20px;
 }
+
 .decoration-plus-3 {
   top: 650px; 
   right: 80%;
@@ -143,6 +145,29 @@
   right: 80%;
   margin-right: 150px;
 }
+.decoration-plus-3,
+.decoration-plus-4,
+.decoration-plus-5 {
+  opacity: 0;
+  animation: appearStagger 0.3s 2s forwards;
+  animation-play-state: paused;
+  .selected-work:hover & {
+    animation-play-state: running;
+  }
+}
+.decoration-plus-4 {
+  animation-delay: 2.1s;
+}
+.decoration-plus-5 {
+  animation-delay: 2.2s;
+}
+@keyframes appearStagger {
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .decoration-plus-6 {
   top: 360px; 
   left: 100%;
