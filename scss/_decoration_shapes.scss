@@ -26,9 +26,19 @@
   height: 21px;
   stroke: black;
 }
+[class*='triangle-down-'] {
+  width: 95px;
+  height: 37px;
+  stroke: black;
+}
 [class*='decoration-prism-down-'] {
   width: 51px;
   height: 115px;
+  stroke: black;
+}
+[class*='decoration-prism-up-'] {
+  width: 92px;
+  height: 214px;
   stroke: black;
 }
 [class*='decoration-weirdo-shape-'] {
@@ -80,6 +90,10 @@
   top: 169px; 
   left: 64px;
 }
+.decoration-prism-up-1 {
+  top: 590px; 
+  left: 64px;
+}
 
 .decoration-weirdo-shape-1 {
   top: 34px; 
@@ -93,13 +107,20 @@
   margin-left: 166px;
 }
 .decoration-square-3 {
-  top: 1785px; 
-  left: 26px;
+  top: 421px; 
+  right: 80%;
+  margin-right: 0;
 }
 .decoration-square-4 {
   top: 394px; 
   right: 80%;
   margin-right: 20px;
+}
+
+.decoration-square-5 {
+  top: 1200px; 
+  right: 80%;
+  margin-right: 180px;
 }
 
 .decoration-plus-2 {
@@ -108,27 +129,36 @@
   margin-left: 20px;
 }
 .decoration-plus-3 {
-  top: 1167px; 
-  left: 149px;
+  top: 650px; 
+  right: 80%;
+  margin-right: -100px;
 }
 .decoration-plus-4 {
-  top: 1200px; 
-  left: 47px;
+  top: 450px; 
+  right: 80%;
+  margin-right: 50px;
 }
 .decoration-plus-5 {
-  top: 1342px; 
-  left: 245px;
+  top: 500px; 
+  right: 80%;
+  margin-right: 150px;
 }
 .decoration-plus-6 {
   top: 360px; 
   left: 100%;
   margin-left: 100px;
 }
+.decoration-plus-7 {
+  transform: rotate(45deg);
+  top: 136px; 
+  right: 80%;
+  margin-right: 150px;
+}
 
 .decoration-circle-1 {
-  top: 875px; 
+  top: 230px; 
   right: 80%;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 .decoration-circle-2 {
   top: 100%;
@@ -141,6 +171,12 @@
   margin-top: 100px;
   left: 0;
   width: 95%;
+}
+
+.decoration-triangle-down-1 {
+  top: 50px;
+  right: 100%;
+  margin-right: 30px;
 }
 
 
