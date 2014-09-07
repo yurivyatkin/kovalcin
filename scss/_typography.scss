@@ -82,4 +82,11 @@ hr {
   h1 {
     color: $about;
   }
+  ul {
+    a {
+      color: $about;
+      border-bottom: 3px solid;
+      padding-bottom: 2px;
+    }
+  }
 }
