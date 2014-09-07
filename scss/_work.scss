@@ -27,6 +27,13 @@
     color: $design;
     border-bottom: 3px solid;
     line-height: 1.5rem;
+    transition: .2s;
+     &:hover, &:focus {
+    border-bottom-color: $midgray;
+    letter-spacing: 3.5px;
+    transition: .2s;
+    color: $midgray;
+  }
   }
   p {
     max-width: 235px;

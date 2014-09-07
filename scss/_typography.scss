@@ -87,6 +87,11 @@ hr {
       color: $about;
       border-bottom: 3px solid;
       padding-bottom: 2px;
+      line-height: 2em;
+      &:hover, &:focus {
+      transition: .5s;
+      color: $midgray;
+    }
     }
   }
 }
