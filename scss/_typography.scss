@@ -24,7 +24,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   a {
-    color: $green;
+    color: $writing;
     transition: .2s;
     &:hover, &:focus {
       transition: .2s;
@@ -37,7 +37,7 @@ h1, h2 {
 }
 h1 {
   font-size: 3rem;
-  color: $green;
+  color: $writing;
   margin: 3rem 0 0.8rem 0;
 }
 h2 {
@@ -75,5 +75,11 @@ hr {
       transition: .5s;
       color: #999;
     }
+  }
+}
+
+.about {
+  h1 {
+    color: $about;
   }
 }

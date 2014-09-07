@@ -31,31 +31,31 @@
     }
     &.nav-design {
       svg {
-        fill: $pink;
+        fill: $design;
       }
       a {
         &:hover, &:focus {
-          color: $pink;
+          color: $design;
         }
       }
     }
     &.nav-writing {
       svg {
-        fill: $green;
+        fill: $writing;
       }
       a {
         &:hover, &:focus {
-          color: $green;
+          color: $writing;
         }
       }
     }
     &.nav-about {
       svg {
-        fill: $yellow;
+        fill: $about;
       }
       a {
         &:hover, &:focus {
-          color: $yellow;
+          color: $about;
         }
       }
     }
@@ -116,11 +116,11 @@ $logoHeight: 43px;
   }
 }
 .logo-katie-a {
-  fill: $pink;
+  fill: $design;
 }
 .logo-kovalcin-v {
-  fill: $green;
+  fill: $writing;
 }
 .logo-kovalcin-a {
-  fill: $yellow;
+  fill: $about;
 }

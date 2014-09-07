@@ -3,7 +3,7 @@
   padding: 40px 40px 40px 40px;
   color: white;
   h5 {
-    color: $yellow;
+    color: $about;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     margin: 0 0 1rem 0;
@@ -21,21 +21,28 @@
     &.contact-twitter {
       &:hover, &:focus {
         svg {
-          fill: #55acee;
+          fill: $about;
         }
       }
     }
     &.contact-dribbble {
       &:hover, &:focus {
         svg {
-          fill: #ea4c89;
+          fill: $about;
+        }
+      }
+    }
+    &.contact-instagram {
+      &:hover, &:focus {
+        svg {
+          fill: $about;
         }
       }
     }
     &.contact-email {
       &:hover, &:focus {
         svg {
-          fill: $yellow;
+          fill: $about;
         }
       }
     }
@@ -97,8 +104,8 @@
       transition: color 0.15s;
       &:hover, &:focus {
         transition: .2s;
-        color: $green;
-        border-bottom: 1px $green solid;
+        color: $writing;
+        border-bottom: 1px $writing solid;
       }
     }
   }
