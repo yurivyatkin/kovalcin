@@ -17,6 +17,14 @@
     width: 66.66%;
     margin-right: 20px;
   }
+  &.grid-half-gutter {
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+    .grid-1-2 {
+      width: 48%;
+      padding: 0;
+    }
+  }
   [class*='grid-']:last-child {
     margin-right: 0;
   }

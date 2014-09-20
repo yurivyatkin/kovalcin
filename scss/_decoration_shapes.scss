@@ -82,6 +82,12 @@
   height: 76px;
   stroke: black;
 }
+[class*='decoration-hp-'] {
+  width: 132px;
+  height: 112px;
+  stroke: black;
+  fill: none;
+}
 
 
 
@@ -131,7 +137,6 @@
   @include svgGlitch("prism-down-group-1", 12, black, white, black, black, 51, 115, 169, 66);
 }
 
-
 .decoration-prism-up-1 {
   top: 590px; 
   left: 64px;
@@ -155,6 +160,23 @@
   to {
     transform: translateY(-135px);
   }
+}
+
+.hp-hover:hover {
+  .decoration-hp-2 {
+    display: block;
+  }
+}
+.decoration-hp-1 {
+  top: 360px; 
+  right: 80%;
+  margin-right: 130px;
+}
+.decoration-hp-2 {
+  top: 360px; 
+  right: 80%;
+  margin-right: 130px;
+  display: none;
 }
 
 .decoration-square-2 {
@@ -204,23 +226,56 @@
 .decoration-plus-4,
 .decoration-plus-5 {
   opacity: 0;
-  animation: appearStagger 0.3s 2s forwards;
-  animation-play-state: paused;
-  .selected-work:hover & {
-    animation-play-state: running;
-  }
+  animation: flicker 15s linear infinite;
 }
 .decoration-plus-4 {
   animation-delay: 2.1s;
 }
 .decoration-plus-5 {
-  animation-delay: 2.2s;
+  animation-delay: 4.2s;
 }
-@keyframes appearStagger {
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  61% {
+    opacity: 0;
+  }
+  62% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 1;
+  }
   100% {
     opacity: 1;
   }
 }
+
 
 
 .decoration-plus-6 {

@@ -14,6 +14,9 @@ $sidebarWidth: 260px;
     color: $writing;
     font-style: italic;
   }
+  img {
+    max-width: 100%;
+  }
   .meta {
     position: absolute;
     top: 0;
