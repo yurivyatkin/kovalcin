@@ -15,12 +15,37 @@
   width: 21px;
   height: 21px;
   stroke: black;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: drawSelf 10s linear alternate infinite;
 }
+@keyframes drawSelf {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  20% {
+    stroke-dashoffset: 100;
+  }
+  80% {
+    stroke-dashoffset: 25;
+  }
+  100% {
+    stroke-dashoffset: 25;
+  }
+}
+
 [class*='decoration-plus-'] {
   width: 24px;
   height: 24px;
   stroke: black;
+  animation: rotateXs 10s infinite alternate;
 }
+@keyframes rotateXs {
+  to {
+    transform: rotate(45deg);
+  }
+}
+
 [class*='decoration-circle-'] {
   width: 21px;
   height: 21px;
@@ -65,7 +90,9 @@
   position: absolute;
   top: 60%;
   left: -100px;
-  animation: driftBy 180s -45s linear infinite;
+  animation: 
+    driftBy 180s -45s linear infinite,
+    drawSelf 10s linear alternate infinite;
   stroke: white;
 }
 @keyframes driftBy {
@@ -77,64 +104,26 @@
   }
 }
 
-.decoration-squiggle-1 {
-  position: absolute;
-  top: 77%;
-  right: 0;
-  width: 300px;
-  height: 39px;
+.squiggle-group-1 {
   stroke: white;
+  @include svgGlitch("prism-down-group-1", 12, black, transparent, black, black, 300, 39, 0, 66);
+  svg {
+    top: 77%;
+    left: auto !important;
+    right: 0;
+    &:nth-child(2) {
+      right: 1px;
+    }
+    &:nth-child(3) {
+      right: -1px;
+    }
+  }
 }
 
 // Main (homepage)
-.decoration-prism-down-1 {
-  top: 169px; 
-  left: 64px;
-  z-index: 3;
+.prism-down-group-1 {
+  @include svgGlitch("prism-down-group-1", 12, black, white, black, black, 51, 115, 169, 66);
 }
-.decoration-prism-down-2 {
-  top: 169px; 
-  left: 66px;
-  z-index: 4;
-  background: white;
-  clip: rect(0px, 51px, 115px, 0px); 
-  animation: noise-anim 5s infinite linear alternate-reverse;
-}
-@keyframes noise-anim {
-  $steps: 20;
-  @for $i from 0 through $steps {
-    #{percentage($i * (1 / $steps))} {
-      clip: rect(
-        random(115)+px, 
-        51px,
-        random(115)+px,
-        0
-      );
-    }
-  }
-}
-@keyframes noise-anim-2 {
-  $steps: 20;
-  @for $i from 0 through $steps {
-    #{percentage($i * (1 / $steps))} {
-      clip: rect(
-        random(115)+px, 
-        51px,
-        random(115)+px,
-        0
-      );
-    }
-  }
-}
-.decoration-prism-down-3 {
-  top: 169px; 
-  left: 62px;
-  z-index: 5;
-  background: white;
-  clip: rect(0px, 51px, 115px, 0px);
-  animation: noise-anim-2 12s infinite linear alternate-reverse;
-}
-
 
 
 .decoration-prism-up-1 {
@@ -146,6 +135,20 @@
   top: 34px; 
   left: 100%;
   margin-left: 100px;
+}
+.wobbleReveal {
+  animation: wobbleReveal 8s infinite;
+}
+@keyframes wobbleReveal {
+  from {
+    transform: translateY(-135px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(-135px);
+  }
 }
 
 .decoration-square-2 {
