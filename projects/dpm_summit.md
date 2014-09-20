@@ -1,21 +1,21 @@
 ---
 layout: project
-title: "Digital Project Management Summit"
+title: "Various Apparel Designs"
 date: 2014-06-30 16:22:48
 ---
 
 <div class="meta">
-  It's cool and neat to the beat
+  Apparel
 </div>
 
-<img src="http://placehold.it/1200x600" alt="">
+<img src="/images/hoodie.jpg" alt="">
 
 <div class="grid grid-half-gutter">
   <div class="grid-1-2">
-    <img src="http://placehold.it/600x300" alt="">
+    <img src="/images/dpm.png" alt="">
   </div>
   <div class="grid-1-2">
-    <img src="http://placehold.it/600x300" alt="">
+    <img src="/images/h2o.jpg" alt="">
   </div>
 </div>
 

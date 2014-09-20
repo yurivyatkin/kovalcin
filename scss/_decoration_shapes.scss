@@ -83,8 +83,8 @@
   stroke: black;
 }
 [class*='decoration-hp-'] {
-  width: 132px;
-  height: 112px;
+  width: 86px;
+  height: 55px;
   stroke: black;
   fill: none;
 }
@@ -164,7 +164,7 @@
 
 .hp-hover:hover {
   .decoration-hp-2 {
-    display: block;
+    opacity: 1;
   }
 }
 .decoration-hp-1 {
@@ -176,7 +176,8 @@
   top: 360px; 
   right: 80%;
   margin-right: 130px;
-  display: none;
+  opacity: 0;
+  transition: 0.2s;
 }
 
 .decoration-square-2 {
@@ -226,7 +227,7 @@
 .decoration-plus-4,
 .decoration-plus-5 {
   opacity: 0;
-  animation: flicker 15s linear infinite;
+  animation: flicker 12s linear infinite;
 }
 .decoration-plus-4 {
   animation-delay: 2.1s;
@@ -238,11 +239,17 @@
   0% {
     opacity: 1;
   }
+  1% {
+    opacity: 0;
+  }
   5% {
     opacity: 0;
   }
   6% {
     opacity: 1;
+  }
+  7% {
+    opacity: 0;
   }
   20% {
     opacity: 0;
@@ -262,11 +269,17 @@
   62% {
     opacity: 1;
   }
+  63% {
+    opacity: 1;
+  }
   80% {
     opacity: 0;
   }
   85% {
     opacity: 0;
+  }
+  86% {
+    opacity: 1;
   }
   92% {
     opacity: 1;
