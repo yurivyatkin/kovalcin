@@ -38,9 +38,15 @@
   width: 24px;
   height: 24px;
   stroke: black;
-  animation: rotateXs 10s infinite alternate;
+  animation: rotateXs 10s linear infinite alternate;
 }
 @keyframes rotateXs {
+  0% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
   to {
     transform: rotate(45deg);
   }
@@ -168,7 +174,7 @@
 }
 
 .decoration-square-5 {
-  top: 1200px; 
+  top: 1195px; 
   right: 80%;
   margin-right: 180px;
 }
