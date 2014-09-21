@@ -5,7 +5,9 @@ date: 2014-06-30 16:22:48
 ---
 
 <div class="meta">
-  Marketing Page
+	  <div class="banner">Website</div>
+  <br>
+  Collection Page
 </div>
 
 <img src="/images/design-patterns.jpg" alt="">

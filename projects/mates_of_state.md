@@ -5,9 +5,9 @@ date: 2014-06-30 16:22:48
 ---
 
 <div class="meta">
-  <div class="banner">test</div>
+  <div class="banner">Print</div>
   <br>
-  Hand screenprinted poster
+  Hand Printed Poster
 </div>
 
 <img src="/images/mates2.jpg" alt="">
