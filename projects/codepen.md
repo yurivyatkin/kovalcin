@@ -12,10 +12,10 @@ date: 2014-06-30 16:22:48
 
 <div class="grid grid-half-gutter">
   <div class="grid-1-2">
-    <img src="http://placehold.it/600x300" alt="">
+    <img src="/images/chart.gif" alt="">
   </div>
   <div class="grid-1-2">
-    <img src="http://placehold.it/600x300" alt="">
+    <img src="/images/login.gif" alt="">
   </div>
 </div>
 
