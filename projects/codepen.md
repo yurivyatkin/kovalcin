@@ -8,7 +8,8 @@ date: 2014-06-30 16:22:48
   Marketing Page
 </div>
 
-<img src="/images/design-patterns.png" alt="">
+<img src="/images/design-patterns.jpg" alt="">
+
 <div class="grid grid-half-gutter">
   <div class="grid-1-2">
     <img src="http://placehold.it/600x300" alt="">

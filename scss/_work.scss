@@ -39,6 +39,9 @@
   &:hover::after {
     opacity: 1;
   }
+  @include breakpoint(baby-bear) {
+    display: none;
+  }
 }
 
 .job {
@@ -69,4 +72,8 @@
     max-width: 235px;
     margin-top: 10px;
   }
+}
+
+.mobile-thumb {
+
 }
