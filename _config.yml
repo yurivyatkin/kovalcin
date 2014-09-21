@@ -1,6 +1,11 @@
 name: Katie Kovalcin
-markdown: redcarpet
+
 baseurl: "http://kovalc.in/"
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["smart"]
+
 exclude: [
   .git,
   .gitignore,

@@ -2,10 +2,18 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<div class="site-width project">
 
-<p class="meta">{{ page.date | date_to_string }}</p>
+  <h1>
+    {{ page.title }}
+  </h1>
 
-<div class="post">
-  {{ content }}
+  <article class="article">
+
+    <div class="article-text">
+      {{ content }}
+    </div>
+
+  </article>
+
 </div>
