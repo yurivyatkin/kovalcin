@@ -68,6 +68,11 @@
     display: initial;
     margin: 0;
     color: #ccc;
+    transition: .2s;
+    &:hover, &:focus {
+      text-decoration: underline;
+      transition: 0.2s;
+    }
   }
 }
 
