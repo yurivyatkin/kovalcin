@@ -20,6 +20,4 @@ date: 2014-06-30 16:22:48
 </div>
 <img src="/images/os-3.jpg" alt="">
 
-<a href="http://vimeo.com/34532174" target="_blank">Old Spice</a> wanted to create a Museum of Manliness to show off the brand's personality via the iconic Buoy Bottle design. I was able to have fun with the brand to create a space for an event to showcase everything Old Spice, including a "mandelier," 
-
-I would just like to add this is the only time I can ever add "hand-shaved typography" to my role on a project.
+<a href="http://vimeo.com/34532174" target="_blank">Old Spice</a> wanted to create a Museum of Manliness to show off the brand's personality via the iconic Buoy Bottle design. I was able to have fun with the brand to create a space for an event to showcase everything Old Spice, including a "mandelier," hand-shaved typography, and a giant buoy bottle wall.
