@@ -31,7 +31,7 @@
   @include breakpoint(baby-bear) {
     display: block;
     [class*='grid-'] {
-      width: 100%;
+      width: 100% !important;
     }
   }
   &[data-grid-type="wrapping"] {
@@ -43,6 +43,11 @@
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
+  > h1 {
+    @include breakpoint(mama-bear) {
+      padding: 0 20px;
+    }
+  }
 }
 
 main {
