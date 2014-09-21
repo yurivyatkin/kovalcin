@@ -5,6 +5,8 @@ date: 2014-06-30 16:22:48
 ---
 
 <div class="meta">
+  <div class="banner">test</div>
+  <br>
   Hand screenprinted poster
 </div>
 
