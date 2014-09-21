@@ -18,5 +18,7 @@ date: 2014-06-30 16:22:48
   </div>
 </div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem placeat odio similique voluptatum perferendis, exercitationem et voluptatibus delectus iusto consequuntur? Quo accusantium voluptatem possimus aperiam sunt minus, atque consequuntur, laboriosam.
+<p>CodePen released a <a href="http://codepen.io/patterns">Design Patterns</a> collection to showcase the best examples on the site.</p>
+<p>
+Working closely with their team, I designed and help to animate a series of illustrations to bring excitement to this new feature.
 </p>

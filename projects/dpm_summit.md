@@ -19,5 +19,5 @@ date: 2014-06-30 16:22:48
   </div>
 </div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem placeat odio similique voluptatum perferendis, exercitationem et voluptatibus delectus iusto consequuntur? Quo accusantium voluptatem possimus aperiam sunt minus, atque consequuntur, laboriosam.
+<p>I love to create custom lettering when I can, and shirts are a great place to showcase that. I've designed apparel for clients ranging from record labels to agencies to events.
 </p>

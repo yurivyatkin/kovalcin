@@ -20,5 +20,6 @@ date: 2014-06-30 16:22:48
 </div>
 <img src="/images/os-3.jpg" alt="">
 
-<p><a href="http://vimeo.com/34532174" target="_blank">Old Spice</a> lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem placeat odio similique voluptatum perferendis, exercitationem et voluptatibus delectus iusto consequuntur? Quo accusantium voluptatem possimus aperiam sunt minus, atque consequuntur, laboriosam.
-</p>
+<a href="http://vimeo.com/34532174" target="_blank">Old Spice</a> wanted to create a Museum of Manliness to show off the brand's personality via the iconic Buoy Bottle design. I was able to have fun with the brand to create a space for an event to showcase everything Old Spice, including a "mandelier," 
+
+I would just like to add this is the only time I can ever add "hand-shaved typography" to my role on a project.

@@ -11,5 +11,4 @@ date: 2014-06-30 16:22:48
 <img src="/images/mates2.jpg" alt="">
 <img src="/images/mates.jpg" alt="">
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem placeat odio similique voluptatum perferendis, exercitationem et voluptatibus delectus iusto consequuntur? Quo accusantium voluptatem possimus aperiam sunt minus, atque consequuntur, laboriosam.
-</p>
+Working closely with Southpaw Prints in Cincinnati, Ohio, I designed a poster for the Midpoint Music Festival and helped print these posters. We sold them at the event in addition to promoting the festival.

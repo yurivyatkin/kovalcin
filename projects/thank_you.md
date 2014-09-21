@@ -10,5 +10,4 @@ date: 2014-06-30 16:22:48
 <img src="/images/thanks1.jpg" alt="">
 <img src="/images/thanks2.jpg" alt="">
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem placeat odio similique voluptatum perferendis, exercitationem et voluptatibus delectus iusto consequuntur? Quo accusantium voluptatem possimus aperiam sunt minus, atque consequuntur, laboriosam.
-</p>
+As a way to say thanks, we created these custom letterpressed cards. I drew inspiration from the city of Cincinnati and the beautiful vintage typography that remains sprinkled throughout downtown. I created custom lettering for the mark, while also utilizing the letterpress medium to create a textural background for extra detail.

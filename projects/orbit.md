@@ -10,5 +10,4 @@ date: 2014-06-30 16:22:48
 
 <img src="/images/gemini.jpg" alt="">
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem placeat odio similique voluptatum perferendis, exercitationem et voluptatibus delectus iusto consequuntur? Quo accusantium voluptatem possimus aperiam sunt minus, atque consequuntur, laboriosam.
-</p>
+A brainchild between <a href="anthonycolangelo.com">Anthony Colangelo</a> and I, we wanted to create a concept for teaching people about orbital mechanics. Using animations, users can interact with models in space to understand physics more clearly.
