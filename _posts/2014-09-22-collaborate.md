@@ -7,7 +7,7 @@ date:   2014-09-22 8:22:48
 For the better part of this year, I have been wanting to house a blog on my personal site. The stars have finally aligned and it’s now live! With the help of Chris Coyier, we were able to build a Jekyll site that was easy for me to update without sacrificing my design vision. We worked closely together to both make design decisions and write the code. There are a lot of neat little details that went into this site that I wanted to share.
 
 ###SVG Bonanza
-I was inspired by the bold, geometric textile patterns that [Dusen Dusen](http://www.dusendusen.com/) creates. The exciting energy of their patterns and shapes. is something that I wanted to capture for the web. Since Chris [knows a thing or two about SVGs](http://css-tricks.com/mega-list-svg-information/), it made sense to utilize them for my shapes. I wanted to push a variety of animations to further create excitement within these shapes.
+I was inspired by the bold, geometric textile patterns that [Dusen Dusen](http://www.dusendusen.com/) creates. The exciting energy of their patterns and shapes is something that I wanted to capture for the web. Since Chris [knows a thing or two about SVGs](http://css-tricks.com/mega-list-svg-information/), it made sense to utilize them for my shapes. I wanted to push a variety of animations to further create excitement within these shapes.
 
 <!--more-->
 
