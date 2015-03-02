@@ -11,7 +11,7 @@ title: Katie Kovalcin - Writing
       {% include top-decorations.html %}
     </article>
 
-    {% for post in site.posts limit:5 %}
+    {% for post in paginator.posts %}
 
     <article class="article">
 
@@ -44,6 +44,16 @@ title: Katie Kovalcin - Writing
 
     {% endfor %}
 
+  </div>
+
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="read-more">Previous</a>
+    {% endif %}
+    <!-- <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> -->
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="read-more">Next</a>
+    {% endif %}
   </div>
 
 </main>
