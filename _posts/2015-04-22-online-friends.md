@@ -4,6 +4,8 @@ title:  "Thank You For Being a Friend"
 date:   2015-04-22 10:30:30
 ---
 
+I grew up online. Not my entire life, but most of my formative years. I'm not sure if this makes me Gen Y or Millenial or part robot, but it's what I'm used to. I wanted to share the impact this has had on my life and friendships I've had through the years.
+
 Let’s take a quick trip back to [1997 America Online](https://www.youtube.com/watch?v=qJJbn4RpoCk). I remember this commercial, I’m sure you do too. Or at least one like it. They advertised connecting with anyone in an instant. I was a kid who watched a lot of Nickelodeon and they’d always advertise “use AOL Keyword: ‘Nick’ to access all things Nickelodeon!” I begged my parents to get AOL, because I thought I was missing out on some crucial Rugrats funtimes that everyone else in the world had.
 
 <!--more-->
