@@ -43,4 +43,4 @@ And not just my safety, the safety of other speakers and attendees. I would almo
 
 We have a problem. A really big problem. If reporting someone does nothing, if organizers are not fit to deal with these tough situations, and if no one is warning others of those who endanger our community—we’re going to keep losing a lot of really great diverse voices.
 
-I pulled out of that conference. That event has lost a woman speaker while simultaneously promoting a dangerous one. Many events will continue to lose good women speakers unless everyone understands that we, as a community, need to protect and look out for each other. And share the burden of taking out the trash.
+I pulled out of that conference. That event has lost a woman speaker while simultaneously promoting a dangerous one. Many events will continue to lose good diverse speakers unless everyone understands that we, as a community, need to protect and look out for each other. And share the burden of taking out the trash.
